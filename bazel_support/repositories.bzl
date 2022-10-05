@@ -22,8 +22,8 @@ def gitquery_dependencies(rules_jvm_external_tag=RULES_JVM_EXTERNAL_TAG,
     _maybe(
         http_archive,
         name = "io_bazel_rules_kotlin",
-        urls = ["https://github.com/bazelbuild/rules_kotlin/releases/download/%s/rules_kotlin_release.tgz" % RULES_KOTLIN_VERSION],
-        sha256 = RULES_KOTLIN_SHA,
+        urls = ["https://github.com/bazelbuild/rules_kotlin/releases/download/%s/rules_kotlin_release.tgz" % rules_kotlin_version],
+        sha256 = rules_kotlin_sha,
     )
 
     _maybe(
